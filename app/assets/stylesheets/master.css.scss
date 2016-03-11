@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -17,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background: url('/assets/restaurant_icons.png');
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-family: 'ralewaymedium';
 }
 
 .navbar.navbar-inverse{
@@ -25,4 +27,12 @@ body {
   border-radius: 0;
   box-shadow: 0px 2px 5px #2a2a2a;
   border-style: hidden;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #D9FFEB;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-size: 46px;
 }
