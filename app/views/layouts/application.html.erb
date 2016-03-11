@@ -18,13 +18,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Vegie<span style= 'color: #FFFED9;' >nom</span>icon</a>
+      <%= link_to 'Vegienomicon', root_path, class: 'navbar-brand' %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Link</a></li> 
+        <li>
+          <%= link_to new_place_path do %>
+          <span style = 'color: white'> <i class="glyphicon glyphicon-plus"></i>
+          New Place</span>
+          <% end %>
+        </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
