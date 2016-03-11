@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 
+## Gemfile for Rails 3+, Sinatra, or Merb
+gem 'will_paginate', '~> 3.0.5'
+
 
 gem 'rails_12factor', group: :production
 
