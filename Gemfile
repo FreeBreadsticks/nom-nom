@@ -9,6 +9,9 @@ gem 'will_paginate', '~> 3.0.5'
 # Gemfile for simple form
 gem 'simple_form'
 
+# gemfile for devise
+gem 'devise', '>= 3.2.4'
+
 gem 'rails_12factor', group: :production
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
