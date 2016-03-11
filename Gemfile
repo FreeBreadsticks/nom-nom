@@ -6,6 +6,8 @@ gem 'sprockets', '2.11.0'
 ## Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
 
+# Gemfile for simple form
+gem 'simple_form'
 
 gem 'rails_12factor', group: :production
 
