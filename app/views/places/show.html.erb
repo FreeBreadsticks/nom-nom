@@ -4,6 +4,12 @@
 <br><br>
 <p><%= @place.description %></p>
 
+<% @place.photos.each do |photo| %>
+  <%= image_tag photo.picture %>
+  <%= photo.caption %>
+  <small>- <%= photo.user.email %></small>
+ <% end %>
+
 <% if @place.latitude.present? && @place.longitude.present? %>
     
   <script>
@@ -30,7 +36,6 @@
 <% end %>
 
 <br>
-
 <div class="pull-right">
   <% if current_user && current_user == @place.user %>
     <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
@@ -41,8 +46,14 @@
 </div>
 <div class="clear"></div>
 
-
-<!-- Button trigger modal -->
+<div class="col-xs-10 col-xs-offset-1">
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <%= f.input :picture %>
+  <%= f.input :caption %>
+  <br>
+  <%= f.submit "Add a Photo", class: 'btn btn-info' %>
+<% end %>
+</div>
 
 
 <!-- Modal -->
