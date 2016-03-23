@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
    :update, :destroy]
 
   def index
-    @places = Place.paginate(:page => params[:page], :per_page => 4)
+    @places = Place.paginate(:page => params[:page], :per_page => 3)
   end
 
   def new

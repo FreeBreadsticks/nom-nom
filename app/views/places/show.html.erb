@@ -86,7 +86,7 @@
 
 <div class="col-xs-10 col-xs-offset-1 butpadding">  
   <h1 class="pull-left">Comments</h1>
-  <button class="btn btn-success btn-lg pull-right" data-toggle="modal" data-target="#myModal">
+  <button class="btn btn-success btn-lg pull-right" data-toggle="modal" data-target="#myModal" style = "margin-bottom: 5px;">
   Add a Comment
   </button>
 </div>
@@ -110,7 +110,7 @@
 <div class="col-xs-10 col-xs-offset-1 butpadding">
   <hr>
   <h1 class = "pull-left">Pictures</h1>
-  <button class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#myModal2">
+  <button class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#myModal2" style = "margin-bottom: 5px;">
   Add a Photo
   </button>
 <div>
@@ -119,7 +119,7 @@
 
 <% @place.photos.each do |photo| %>
   <div class="col-xs-12 col-sm-6 thumbnail">
-    <%= image_tag photo.picture, class: "img-responsive" %>
+    <%= image_tag photo.picture, class: 'img-responsive imgindex' %>
     <%= photo.caption %><br>
     <small class = "pull-right">- <%= photo.user.email %></small>
   </div>
