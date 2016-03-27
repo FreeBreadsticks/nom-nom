@@ -140,7 +140,7 @@ h4 {
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #9DBFB5;
-  margin: 1.5em 10px;
+  margin: 6px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
@@ -149,7 +149,7 @@ blockquote:before {
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 0.25em;
+  
   vertical-align: -0.4em;
 }
 blockquote p {
@@ -201,4 +201,8 @@ blockquote p {
 
 .links a {
   color: #FEFFC7
+}
+
+.text-center {
+  padding: 5px;
 }
